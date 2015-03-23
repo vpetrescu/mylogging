@@ -1,0 +1,313 @@
+format version: 5
+output mode:
+1 items
+0 -> single
+output directories:
+1 items
+output dir -> /Users/alex/workspace_scala/mylogging/target/scala-2.10/classes
+compile options:
+0 items
+javac options:
+0 items
+compiler version:
+1 items
+0 -> 2.10.4
+compile order:
+1 items
+0 -> Mixed
+name hashing:
+1 items
+0 -> true
+products:
+41 items
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> /Users/alex/workspace_scala/mylogging/target/scala-2.10/classes/mylogging/mylogging/AppSummary$.class
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> /Users/alex/workspace_scala/mylogging/target/scala-2.10/classes/mylogging/mylogging/AppSummary.class
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> /Users/alex/workspace_scala/mylogging/target/scala-2.10/classes/mylogging/mylogging/Foo$.class
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> /Users/alex/workspace_scala/mylogging/target/scala-2.10/classes/mylogging/mylogging/Foo.class
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> /Users/alex/workspace_scala/mylogging/target/scala-2.10/classes/mylogging/mylogging/LogAnalysis1$$anonfun$1.class
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> /Users/alex/workspace_scala/mylogging/target/scala-2.10/classes/mylogging/mylogging/LogAnalysis1$$anonfun$2.class
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> /Users/alex/workspace_scala/mylogging/target/scala-2.10/classes/mylogging/mylogging/LogAnalysis1$$anonfun$3.class
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> /Users/alex/workspace_scala/mylogging/target/scala-2.10/classes/mylogging/mylogging/LogAnalysis1$$anonfun$4.class
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> /Users/alex/workspace_scala/mylogging/target/scala-2.10/classes/mylogging/mylogging/LogAnalysis1$$anonfun$mylogging$mylogging$LogAnalysis1$$parseLine$1$1.class
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> /Users/alex/workspace_scala/mylogging/target/scala-2.10/classes/mylogging/mylogging/LogAnalysis1$.class
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> /Users/alex/workspace_scala/mylogging/target/scala-2.10/classes/mylogging/mylogging/LogAnalysis1.class
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> /Users/alex/workspace_scala/mylogging/target/scala-2.10/classes/mylogging/mylogging/LogLine.class
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> /Users/alex/workspace_scala/mylogging/target/scala-2.10/classes/mylogging/mylogging/LogP$$anonfun$logline$1.class
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> /Users/alex/workspace_scala/mylogging/target/scala-2.10/classes/mylogging/mylogging/LogP$$anonfun$logline$2.class
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> /Users/alex/workspace_scala/mylogging/target/scala-2.10/classes/mylogging/mylogging/LogP$$anonfun$logline$3.class
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> /Users/alex/workspace_scala/mylogging/target/scala-2.10/classes/mylogging/mylogging/LogP$$anonfun$logline$4.class
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> /Users/alex/workspace_scala/mylogging/target/scala-2.10/classes/mylogging/mylogging/LogP$$anonfun$logline$5.class
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> /Users/alex/workspace_scala/mylogging/target/scala-2.10/classes/mylogging/mylogging/LogP$$anonfun$logline$6$$anonfun$apply$1.class
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> /Users/alex/workspace_scala/mylogging/target/scala-2.10/classes/mylogging/mylogging/LogP$$anonfun$logline$6$$anonfun$apply$10.class
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> /Users/alex/workspace_scala/mylogging/target/scala-2.10/classes/mylogging/mylogging/LogP$$anonfun$logline$6$$anonfun$apply$11.class
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> /Users/alex/workspace_scala/mylogging/target/scala-2.10/classes/mylogging/mylogging/LogP$$anonfun$logline$6$$anonfun$apply$12.class
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> /Users/alex/workspace_scala/mylogging/target/scala-2.10/classes/mylogging/mylogging/LogP$$anonfun$logline$6$$anonfun$apply$13.class
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> /Users/alex/workspace_scala/mylogging/target/scala-2.10/classes/mylogging/mylogging/LogP$$anonfun$logline$6$$anonfun$apply$14.class
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> /Users/alex/workspace_scala/mylogging/target/scala-2.10/classes/mylogging/mylogging/LogP$$anonfun$logline$6$$anonfun$apply$15.class
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> /Users/alex/workspace_scala/mylogging/target/scala-2.10/classes/mylogging/mylogging/LogP$$anonfun$logline$6$$anonfun$apply$16.class
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> /Users/alex/workspace_scala/mylogging/target/scala-2.10/classes/mylogging/mylogging/LogP$$anonfun$logline$6$$anonfun$apply$17.class
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> /Users/alex/workspace_scala/mylogging/target/scala-2.10/classes/mylogging/mylogging/LogP$$anonfun$logline$6$$anonfun$apply$18.class
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> /Users/alex/workspace_scala/mylogging/target/scala-2.10/classes/mylogging/mylogging/LogP$$anonfun$logline$6$$anonfun$apply$19.class
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> /Users/alex/workspace_scala/mylogging/target/scala-2.10/classes/mylogging/mylogging/LogP$$anonfun$logline$6$$anonfun$apply$2.class
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> /Users/alex/workspace_scala/mylogging/target/scala-2.10/classes/mylogging/mylogging/LogP$$anonfun$logline$6$$anonfun$apply$3.class
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> /Users/alex/workspace_scala/mylogging/target/scala-2.10/classes/mylogging/mylogging/LogP$$anonfun$logline$6$$anonfun$apply$4.class
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> /Users/alex/workspace_scala/mylogging/target/scala-2.10/classes/mylogging/mylogging/LogP$$anonfun$logline$6$$anonfun$apply$5.class
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> /Users/alex/workspace_scala/mylogging/target/scala-2.10/classes/mylogging/mylogging/LogP$$anonfun$logline$6$$anonfun$apply$6.class
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> /Users/alex/workspace_scala/mylogging/target/scala-2.10/classes/mylogging/mylogging/LogP$$anonfun$logline$6$$anonfun$apply$7.class
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> /Users/alex/workspace_scala/mylogging/target/scala-2.10/classes/mylogging/mylogging/LogP$$anonfun$logline$6$$anonfun$apply$8.class
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> /Users/alex/workspace_scala/mylogging/target/scala-2.10/classes/mylogging/mylogging/LogP$$anonfun$logline$6$$anonfun$apply$9.class
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> /Users/alex/workspace_scala/mylogging/target/scala-2.10/classes/mylogging/mylogging/LogP$$anonfun$logline$6.class
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> /Users/alex/workspace_scala/mylogging/target/scala-2.10/classes/mylogging/mylogging/LogP$.class
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> /Users/alex/workspace_scala/mylogging/target/scala-2.10/classes/mylogging/mylogging/LogP.class
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> /Users/alex/workspace_scala/mylogging/target/scala-2.10/classes/mylogging/mylogging/UnknownLine$.class
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> /Users/alex/workspace_scala/mylogging/target/scala-2.10/classes/mylogging/mylogging/UnknownLine.class
+binary dependencies:
+4 items
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> /Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/rt.jar
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> /Users/alex/.ivy2/cache/org.apache.spark/spark-core_2.10/jars/spark-core_2.10-1.2.1.jar
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> /Users/alex/.ivy2/cache/org.apache.spark/spark-mllib_2.10/jars/spark-mllib_2.10-1.2.1.jar
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> /Users/alex/.sbt/boot/scala-2.10.4/lib/scala-library.jar
+direct source dependencies:
+0 items
+direct external dependencies:
+0 items
+public inherited source dependencies:
+0 items
+public inherited external dependencies:
+0 items
+member reference internal dependencies:
+0 items
+member reference external dependencies:
+0 items
+inheritance internal dependencies:
+0 items
+inheritance external dependencies:
+0 items
+class names:
+41 items
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> mylogging.mylogging.AppSummary
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> mylogging.mylogging.AppSummary$
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> mylogging.mylogging.Foo
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> mylogging.mylogging.Foo$
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> mylogging.mylogging.LogAnalysis1
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> mylogging.mylogging.LogAnalysis1$
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> mylogging.mylogging.LogAnalysis1$$anonfun$1
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> mylogging.mylogging.LogAnalysis1$$anonfun$2
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> mylogging.mylogging.LogAnalysis1$$anonfun$3
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> mylogging.mylogging.LogAnalysis1$$anonfun$4
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> mylogging.mylogging.LogAnalysis1$$anonfun$mylogging$mylogging$LogAnalysis1$$parseLine$1$1
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> mylogging.mylogging.LogLine
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> mylogging.mylogging.LogP
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> mylogging.mylogging.LogP$
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> mylogging.mylogging.LogP$$anonfun$logline$1
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> mylogging.mylogging.LogP$$anonfun$logline$2
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> mylogging.mylogging.LogP$$anonfun$logline$3
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> mylogging.mylogging.LogP$$anonfun$logline$4
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> mylogging.mylogging.LogP$$anonfun$logline$5
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> mylogging.mylogging.LogP$$anonfun$logline$6
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> mylogging.mylogging.LogP$$anonfun$logline$6$$anonfun$apply$1
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> mylogging.mylogging.LogP$$anonfun$logline$6$$anonfun$apply$10
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> mylogging.mylogging.LogP$$anonfun$logline$6$$anonfun$apply$11
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> mylogging.mylogging.LogP$$anonfun$logline$6$$anonfun$apply$12
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> mylogging.mylogging.LogP$$anonfun$logline$6$$anonfun$apply$13
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> mylogging.mylogging.LogP$$anonfun$logline$6$$anonfun$apply$14
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> mylogging.mylogging.LogP$$anonfun$logline$6$$anonfun$apply$15
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> mylogging.mylogging.LogP$$anonfun$logline$6$$anonfun$apply$16
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> mylogging.mylogging.LogP$$anonfun$logline$6$$anonfun$apply$17
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> mylogging.mylogging.LogP$$anonfun$logline$6$$anonfun$apply$18
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> mylogging.mylogging.LogP$$anonfun$logline$6$$anonfun$apply$19
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> mylogging.mylogging.LogP$$anonfun$logline$6$$anonfun$apply$2
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> mylogging.mylogging.LogP$$anonfun$logline$6$$anonfun$apply$3
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> mylogging.mylogging.LogP$$anonfun$logline$6$$anonfun$apply$4
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> mylogging.mylogging.LogP$$anonfun$logline$6$$anonfun$apply$5
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> mylogging.mylogging.LogP$$anonfun$logline$6$$anonfun$apply$6
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> mylogging.mylogging.LogP$$anonfun$logline$6$$anonfun$apply$7
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> mylogging.mylogging.LogP$$anonfun$logline$6$$anonfun$apply$8
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> mylogging.mylogging.LogP$$anonfun$logline$6$$anonfun$apply$9
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> mylogging.mylogging.UnknownLine
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> mylogging.mylogging.UnknownLine$
+used names:
+109 items
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> &&
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> +
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> -
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> <init>
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> ==
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> AbstractFunction0
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> AbstractFunction10
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> AbstractFunction3
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> AnyRef
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> AppSummary
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> Array
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> ClassTag
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> Foo
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> LabeledPoint
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> List
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> LogAnalysis1
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> LogLine
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> LogP
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> MLUtils
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> Nil
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> None
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> Parser
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> Predef
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> Product
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> RegexParsers
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> SVMWithSGD
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> ScalaRunTime
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> Serializable
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> SparkConf
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> SparkContext
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> String
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> Unit
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> UnknownLine
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> Vectors
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> ^^
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> _1
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> _2
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> _hashCode
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> _toString
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> a
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> apache
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> app
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> appatt
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> apply
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> asInstanceOf
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> augmentString
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> cache
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> classification
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> combinator
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> endTime
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> eq
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> etime
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> f
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> finalStatus
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> flatMap
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> ftemp
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> getOrElse
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> host
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> ident
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> identW
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> immutable
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> io
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> isInstanceOf
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> java
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> l
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> linalg
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> lines
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> literal
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> ll
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> ll2
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> logline
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> map
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> materializeClassTag
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> mllib
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> mylogging
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> name
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> ne
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> org
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> package
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> parse
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> parseLine
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> parsing
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> r
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> regex
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> regression
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> runtime
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> s
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> saveAsTextFile
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> sc
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> scala
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> setAppName
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> spark
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> startTime
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> state
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> stime
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> stop
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> t
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> textFile
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> timestamp
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> toDouble
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> toString
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> ts
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> typedProductIterator
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> url
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> user
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> util
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> |
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> ||
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> ~
+product stamps:
+41 items
+/Users/alex/workspace_scala/mylogging/target/scala-2.10/classes/mylogging/mylogging/AppSummary$.class -> lastModified(1427066588000)
+/Users/alex/workspace_scala/mylogging/target/scala-2.10/classes/mylogging/mylogging/AppSummary.class -> lastModified(1427066588000)
+/Users/alex/workspace_scala/mylogging/target/scala-2.10/classes/mylogging/mylogging/Foo$.class -> lastModified(1427066588000)
+/Users/alex/workspace_scala/mylogging/target/scala-2.10/classes/mylogging/mylogging/Foo.class -> lastModified(1427066588000)
+/Users/alex/workspace_scala/mylogging/target/scala-2.10/classes/mylogging/mylogging/LogAnalysis1$$anonfun$1.class -> lastModified(1427066588000)
+/Users/alex/workspace_scala/mylogging/target/scala-2.10/classes/mylogging/mylogging/LogAnalysis1$$anonfun$2.class -> lastModified(1427066588000)
+/Users/alex/workspace_scala/mylogging/target/scala-2.10/classes/mylogging/mylogging/LogAnalysis1$$anonfun$3.class -> lastModified(1427066588000)
+/Users/alex/workspace_scala/mylogging/target/scala-2.10/classes/mylogging/mylogging/LogAnalysis1$$anonfun$4.class -> lastModified(1427066588000)
+/Users/alex/workspace_scala/mylogging/target/scala-2.10/classes/mylogging/mylogging/LogAnalysis1$$anonfun$mylogging$mylogging$LogAnalysis1$$parseLine$1$1.class -> lastModified(1427066588000)
+/Users/alex/workspace_scala/mylogging/target/scala-2.10/classes/mylogging/mylogging/LogAnalysis1$.class -> lastModified(1427066588000)
+/Users/alex/workspace_scala/mylogging/target/scala-2.10/classes/mylogging/mylogging/LogAnalysis1.class -> lastModified(1427066588000)
+/Users/alex/workspace_scala/mylogging/target/scala-2.10/classes/mylogging/mylogging/LogLine.class -> lastModified(1427066588000)
+/Users/alex/workspace_scala/mylogging/target/scala-2.10/classes/mylogging/mylogging/LogP$$anonfun$logline$1.class -> lastModified(1427066589000)
+/Users/alex/workspace_scala/mylogging/target/scala-2.10/classes/mylogging/mylogging/LogP$$anonfun$logline$2.class -> lastModified(1427066589000)
+/Users/alex/workspace_scala/mylogging/target/scala-2.10/classes/mylogging/mylogging/LogP$$anonfun$logline$3.class -> lastModified(1427066589000)
+/Users/alex/workspace_scala/mylogging/target/scala-2.10/classes/mylogging/mylogging/LogP$$anonfun$logline$4.class -> lastModified(1427066589000)
+/Users/alex/workspace_scala/mylogging/target/scala-2.10/classes/mylogging/mylogging/LogP$$anonfun$logline$5.class -> lastModified(1427066589000)
+/Users/alex/workspace_scala/mylogging/target/scala-2.10/classes/mylogging/mylogging/LogP$$anonfun$logline$6$$anonfun$apply$1.class -> lastModified(1427066589000)
+/Users/alex/workspace_scala/mylogging/target/scala-2.10/classes/mylogging/mylogging/LogP$$anonfun$logline$6$$anonfun$apply$10.class -> lastModified(1427066589000)
+/Users/alex/workspace_scala/mylogging/target/scala-2.10/classes/mylogging/mylogging/LogP$$anonfun$logline$6$$anonfun$apply$11.class -> lastModified(1427066589000)
+/Users/alex/workspace_scala/mylogging/target/scala-2.10/classes/mylogging/mylogging/LogP$$anonfun$logline$6$$anonfun$apply$12.class -> lastModified(1427066589000)
+/Users/alex/workspace_scala/mylogging/target/scala-2.10/classes/mylogging/mylogging/LogP$$anonfun$logline$6$$anonfun$apply$13.class -> lastModified(1427066589000)
+/Users/alex/workspace_scala/mylogging/target/scala-2.10/classes/mylogging/mylogging/LogP$$anonfun$logline$6$$anonfun$apply$14.class -> lastModified(1427066589000)
+/Users/alex/workspace_scala/mylogging/target/scala-2.10/classes/mylogging/mylogging/LogP$$anonfun$logline$6$$anonfun$apply$15.class -> lastModified(1427066589000)
+/Users/alex/workspace_scala/mylogging/target/scala-2.10/classes/mylogging/mylogging/LogP$$anonfun$logline$6$$anonfun$apply$16.class -> lastModified(1427066589000)
+/Users/alex/workspace_scala/mylogging/target/scala-2.10/classes/mylogging/mylogging/LogP$$anonfun$logline$6$$anonfun$apply$17.class -> lastModified(1427066589000)
+/Users/alex/workspace_scala/mylogging/target/scala-2.10/classes/mylogging/mylogging/LogP$$anonfun$logline$6$$anonfun$apply$18.class -> lastModified(1427066589000)
+/Users/alex/workspace_scala/mylogging/target/scala-2.10/classes/mylogging/mylogging/LogP$$anonfun$logline$6$$anonfun$apply$19.class -> lastModified(1427066589000)
+/Users/alex/workspace_scala/mylogging/target/scala-2.10/classes/mylogging/mylogging/LogP$$anonfun$logline$6$$anonfun$apply$2.class -> lastModified(1427066589000)
+/Users/alex/workspace_scala/mylogging/target/scala-2.10/classes/mylogging/mylogging/LogP$$anonfun$logline$6$$anonfun$apply$3.class -> lastModified(1427066589000)
+/Users/alex/workspace_scala/mylogging/target/scala-2.10/classes/mylogging/mylogging/LogP$$anonfun$logline$6$$anonfun$apply$4.class -> lastModified(1427066589000)
+/Users/alex/workspace_scala/mylogging/target/scala-2.10/classes/mylogging/mylogging/LogP$$anonfun$logline$6$$anonfun$apply$5.class -> lastModified(1427066589000)
+/Users/alex/workspace_scala/mylogging/target/scala-2.10/classes/mylogging/mylogging/LogP$$anonfun$logline$6$$anonfun$apply$6.class -> lastModified(1427066589000)
+/Users/alex/workspace_scala/mylogging/target/scala-2.10/classes/mylogging/mylogging/LogP$$anonfun$logline$6$$anonfun$apply$7.class -> lastModified(1427066589000)
+/Users/alex/workspace_scala/mylogging/target/scala-2.10/classes/mylogging/mylogging/LogP$$anonfun$logline$6$$anonfun$apply$8.class -> lastModified(1427066589000)
+/Users/alex/workspace_scala/mylogging/target/scala-2.10/classes/mylogging/mylogging/LogP$$anonfun$logline$6$$anonfun$apply$9.class -> lastModified(1427066589000)
+/Users/alex/workspace_scala/mylogging/target/scala-2.10/classes/mylogging/mylogging/LogP$$anonfun$logline$6.class -> lastModified(1427066589000)
+/Users/alex/workspace_scala/mylogging/target/scala-2.10/classes/mylogging/mylogging/LogP$.class -> lastModified(1427066589000)
+/Users/alex/workspace_scala/mylogging/target/scala-2.10/classes/mylogging/mylogging/LogP.class -> lastModified(1427066589000)
+/Users/alex/workspace_scala/mylogging/target/scala-2.10/classes/mylogging/mylogging/UnknownLine$.class -> lastModified(1427066589000)
+/Users/alex/workspace_scala/mylogging/target/scala-2.10/classes/mylogging/mylogging/UnknownLine.class -> lastModified(1427066589000)
+source stamps:
+1 items
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> hash(a2891e69b17f9191b848bd775ae971687d5b7f53)
+binary stamps:
+4 items
+/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/rt.jar -> lastModified(1418968825000)
+/Users/alex/.ivy2/cache/org.apache.spark/spark-core_2.10/jars/spark-core_2.10-1.2.1.jar -> lastModified(1422925925000)
+/Users/alex/.ivy2/cache/org.apache.spark/spark-mllib_2.10/jars/spark-mllib_2.10-1.2.1.jar -> lastModified(1422925940000)
+/Users/alex/.sbt/boot/scala-2.10.4/lib/scala-library.jar -> lastModified(1395179187000)
+class names:
+4 items
+/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/rt.jar -> java.lang.Object
+/Users/alex/.ivy2/cache/org.apache.spark/spark-core_2.10/jars/spark-core_2.10-1.2.1.jar -> org.apache.spark.rdd.RDD
+/Users/alex/.ivy2/cache/org.apache.spark/spark-mllib_2.10/jars/spark-mllib_2.10-1.2.1.jar -> org.apache.spark.mllib.classification.SVMWithSGD
+/Users/alex/.sbt/boot/scala-2.10.4/lib/scala-library.jar -> scala.runtime.AbstractFunction0
+internal apis:
+1 items
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHBj78PoAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAADc3IAIHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoWw71InY4V88CAAJJAARoYXNoTAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hw7I6X6HQAB2xpdGVyYWxzcQB+AAtqJsRUdAAGYWNjZXB0c3EAfgALqle5L3QABXJlZ2V4dXEAfgAJAAAAj3NxAH4ACyvGf2N0ABB3aXRoRXJyb3JNZXNzYWdlc3EAfgALJBmrWXQACndpdGhGaWx0ZXJzcQB+AAvtjblkdAACXl5zcQB+AAu5HnGNdAAPZmxhdE1hcFdpdGhOZXh0c3EAfgALibMsJnQABm5vdGlmeXNxAH4AC+MfX9d0AAdmYWlsdXJlc3EAfgALHEhgynQAB3VuYXBwbHlzcQB+AAsJJn57dAAHY3VycmllZHNxAH4AC4JLmqN0AARuYW1lc3EAfgALouoskHQAA3x8fHNxAH4AC50T7NR0AAdzdWNjZXNzc3EAfgALsRUExXQABHdhaXRzcQB+AAtlx2QJdAABKnNxAH4AC5/XuX50AAZhY2NlcHRzcQB+AAsMpXG1dAAJc3RhcnRUaW1lc3EAfgALExtYIXQADmNvcHkkZGVmYXVsdCQyc3EAfgALUy3FAXQADSRhc0luc3RhbmNlT2ZzcQB+AAs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AAHhwAAAABnNyABN4c2J0aS5hcGkuQ2xhc3NMaWtlgzQcod+wl2wCAARMAA5kZWZpbml0aW9uVHlwZXQAGkx4c2J0aS9hcGkvRGVmaW5pdGlvblR5cGU7WwAQc2F2ZWRBbm5vdGF0aW9uc3QAE1tMamF2YS9sYW5nL1N0cmluZztMAAhzZWxmVHlwZXQAEEx4c2J0aS9hcGkvTGF6eTtMAAlzdHJ1Y3R1cmVxAH4BO3hyACF4c2J0aS5hcGkuUGFyYW1ldGVyaXplZERlZmluaXRpb275EW6x1VA84gIAAVsADnR5cGVQYXJhbWV0ZXJzdAAaW0x4c2J0aS9hcGkvVHlwZVBhcmFtZXRlcjt4cgAUeHNidGkuYXBpLkRlZmluaXRpb26HKhvocULjRgIABEwABmFjY2Vzc3QAEkx4c2J0aS9hcGkvQWNjZXNzO1sAC2Fubm90YXRpb25zdAAXW0x4c2J0aS9hcGkvQW5ub3RhdGlvbjtMAAltb2RpZmllcnN0ABVMeHNidGkvYXBpL01vZGlmaWVycztMAARuYW1lcQB+AAx4cHNyABB4c2J0aS5hcGkuUHVibGljulg9rmwtYEICAAB4cgAQeHNidGkuYXBpLkFjY2Vzc91imvgdYzFIAgAAeHB1cgAXW0x4c2J0aS5hcGkuQW5ub3RhdGlvbjvrl+sZEPaNSAIAAHhwAAAAAHNyABN4c2J0aS5hcGkuTW9kaWZpZXJzxxETIWmc3CQCAAFCAAVmbGFnc3hwAXQAG215bG9nZ2luZy5teWxvZ2dpbmcuTG9nTGluZXVyABpbTHhzYnRpLmFwaS5UeXBlUGFyYW1ldGVyO9ltJg8onfK2AgAAeHAAAAAAfnIAGHhzYnRpLmFwaS5EZWZpbml0aW9uVHlwZQAAAAAAAAAAEgAAeHIADmphdmEubGFuZy5FbnVtAAAAAAAAAAASAAB4cHQACENsYXNzRGVmdXIAE1tMamF2YS5sYW5nLlN0cmluZzut0lbn6R17RwIAAHhwAAAAAHNyABN4c2J0aS5TYWZlTGF6eSRJbXBsUAIuk5eXQD8CAANaAAhiaXRtYXAkMEwAAl90dAASTGphdmEvbGFuZy9PYmplY3Q7TAAEZXZhbHQAEUxzY2FsYS9GdW5jdGlvbjA7eHIAFnhzYnRpLmFwaS5BYnN0cmFjdExhennTd7UBX7vnoAIAAHhwAXNyABN4c2J0aS5hcGkuRW1wdHlUeXBlvP2eRkk7iSQCAAB4cgAUeHNidGkuYXBpLlNpbXBsZVR5cGVyeGKIISO/QAIAAHhyAA54c2J0aS5hcGkuVHlwZT9q2SEWSarKAgAAeHBwc3EAfgFTAXNyABN4c2J0aS5hcGkuU3RydWN0dXJlqar5gJNv2AACAANMAAhkZWNsYXJlZHEAfgE7TAAJaW5oZXJpdGVkcQB+ATtMAAdwYXJlbnRzcQB+ATt4cQB+AVpzcQB+AVMBdXEAfgE2AAAAAHBzcQB+AVMBdXEAfgE2AAAAAHBzcQB+AVMBdXIAEVtMeHNidGkuYXBpLlR5cGU7dP+lWnv56UECAAB4cAAAAANzcgAUeHNidGkuYXBpLlByb2plY3Rpb27z0o1U6UWkLQIAAkwAAmlkcQB+AAxMAAZwcmVmaXh0ABZMeHNidGkvYXBpL1NpbXBsZVR5cGU7eHEAfgFZdAAMU2VyaWFsaXphYmxlc3IAE3hzYnRpLmFwaS5TaW5nbGV0b278p1/4z1bkRgIAAUwABHBhdGh0ABBMeHNidGkvYXBpL1BhdGg7eHEAfgFZc3IADnhzYnRpLmFwaS5QYXRomz1cCM6lJ4QCAAFbAApjb21wb25lbnRzdAAaW0x4c2J0aS9hcGkvUGF0aENvbXBvbmVudDt4cHVyABpbTHhzYnRpLmFwaS5QYXRoQ29tcG9uZW50O0PaCXQtZxZ0AgAAeHAAAAADc3IADHhzYnRpLmFwaS5JZJgybIs3U8RAAgABTAACaWRxAH4ADHhyABd4c2J0aS5hcGkuUGF0aENvbXBvbmVudF+aIlsuhp+8AgAAeHB0AARqYXZhc3EAfgFydAACaW9zcgAOeHNidGkuYXBpLlRoaXPbCe2mzFpAXAIAAHhxAH4Bc3NxAH4BZnQABk9iamVjdHNxAH4BanNxAH4BbXVxAH4BcAAAAANzcQB+AXJxAH4BdXNxAH4BcnQABGxhbmdxAH4BeXNxAH4BZnQAA0FueXNxAH4BanNxAH4BbXVxAH4BcAAAAAJzcQB+AXJ0AAVzY2FsYXEAfgF5cHBzcQB+AThxAH4BRXVxAH4BRgAAAABzcQB+AUgAdAAXbXlsb2dnaW5nLm15bG9nZ2luZy5Gb291cQB+AUsAAAAAcQB+AU91cQB+AVEAAAAAc3EAfgFTAXEAfgFbcHNxAH4BUwFzcQB+AV1zcQB+AVMBdXEAfgE2AAAAAHBzcQB+AVMBdXEAfgE2AAAAAHBzcQB+AVMBdXEAfgFkAAAAB3NxAH4BZnEAfgFpc3EAfgFqc3EAfgFtdXEAfgFwAAAAAnNxAH4BcnEAfgGIcQB+AXlzcQB+AWZ0AAdQcm9kdWN0cQB+AZlzcQB+AWZ0AAZFcXVhbHNxAH4BmXNxAH4BZnQAB0xvZ0xpbmVzcQB+AWpzcQB+AW11cQB+AXAAAAADc3EAfgFydAAJbXlsb2dnaW5nc3EAfgFydAAJbXlsb2dnaW5ncQB+AXlzcQB+AWZxAH4BaXNxAH4BanNxAH4BbXVxAH4BcAAAAANzcQB+AXJxAH4BdXNxAH4BcnQAAmlvcQB+AXlzcQB+AWZxAH4Be3NxAH4BanNxAH4BbXVxAH4BcAAAAANzcQB+AXJxAH4BdXNxAH4BcnEAfgGBcQB+AXlzcQB+AWZxAH4Bg3EAfgGZcHBzcQB+AThxAH4BRXVxAH4BRgAAAABzcQB+AUgAdAAebXlsb2dnaW5nLm15bG9nZ2luZy5BcHBTdW1tYXJ5dXEAfgFLAAAAAHEAfgFPdXEAfgFRAAAAAHNxAH4BUwFxAH4BW3BzcQB+AVMBc3EAfgFdc3EAfgFTAXVxAH4BNgAAAABwc3EAfgFTAXVxAH4BNgAAAABwc3EAfgFTAXVxAH4BZAAAAAdzcQB+AWZxAH4BaXNxAH4BanNxAH4BbXVxAH4BcAAAAAJzcQB+AXJxAH4BiHEAfgF5c3EAfgFmcQB+AZ5xAH4ByHNxAH4BZnQABkVxdWFsc3EAfgHIc3EAfgFmdAAHTG9nTGluZXNxAH4BanNxAH4BbXVxAH4BcAAAAANzcQB+AXJ0AAlteWxvZ2dpbmdzcQB+AXJ0AAlteWxvZ2dpbmdxAH4BeXNxAH4BZnEAfgFpc3EAfgFqc3EAfgFtdXEAfgFwAAAAA3NxAH4BcnEAfgF1c3EAfgFydAACaW9xAH4BeXNxAH4BZnEAfgF7c3EAfgFqc3EAfgFtdXEAfgFwAAAAA3NxAH4BcnEAfgF1c3EAfgFycQB+AYFxAH4BeXNxAH4BZnEAfgGDcQB+AchwcHNxAH4BOHEAfgFFdXEAfgFGAAAAAHNxAH4BSAB0AB9teWxvZ2dpbmcubXlsb2dnaW5nLlVua25vd25MaW5ldXEAfgFLAAAAAHEAfgFPdXEAfgFRAAAAAHNxAH4BUwFxAH4BW3BzcQB+AVMBc3EAfgFdc3EAfgFTAXVxAH4BNgAAAABwc3EAfgFTAXVxAH4BNgAAAABwc3EAfgFTAXVxAH4BZAAAAAdzcQB+AWZxAH4BaXNxAH4BanNxAH4BbXVxAH4BcAAAAAJzcQB+AXJxAH4BiHEAfgF5c3EAfgFmcQB+AZ5xAH4B9nNxAH4BZnQABkVxdWFsc3EAfgH2c3EAfgFmdAAHTG9nTGluZXNxAH4BanNxAH4BbXVxAH4BcAAAAANzcQB+AXJ0AAlteWxvZ2dpbmdzcQB+AXJ0AAlteWxvZ2dpbmdxAH4BeXNxAH4BZnEAfgFpc3EAfgFqc3EAfgFtdXEAfgFwAAAAA3NxAH4BcnEAfgF1c3EAfgFydAACaW9xAH4BeXNxAH4BZnEAfgF7c3EAfgFqc3EAfgFtdXEAfgFwAAAAA3NxAH4BcnEAfgF1c3EAfgFycQB+AYFxAH4BeXNxAH4BZnEAfgGDcQB+AfZwcHNxAH4BOHEAfgFFdXEAfgFGAAAAAHNxAH4BSAB0ABhteWxvZ2dpbmcubXlsb2dnaW5nLkxvZ1B1cQB+AUsAAAAAfnEAfgFNdAAGTW9kdWxldXEAfgFRAAAAAnQAEHNjYWxhLmRlcHJlY2F0ZWR0ABpzY2FsYS5hbm5vdGF0aW9uLm1pZ3JhdGlvbnNxAH4BUwFxAH4BW3BzcQB+AVMBc3EAfgFdc3EAfgFTAXVxAH4BNgAAAABwc3EAfgFTAXVxAH4BNgAAAABwc3EAfgFTAXVxAH4BZAAAAAVzcQB+AWZxAH4BaXNxAH4BanNxAH4BbXVxAH4BcAAAAANzcQB+AXJxAH4BdXNxAH4BcnQAAmlvcQB+AXlzcQB+AWZ0AAxSZWdleFBhcnNlcnNzcQB+AWpzcQB+AW11cQB+AXAAAAAFc3EAfgFycQB+AYhzcQB+AXJ0AAR1dGlsc3EAfgFydAAHcGFyc2luZ3NxAH4BcnQACmNvbWJpbmF0b3JxAH4BeXNxAH4BZnQAB1BhcnNlcnNxAH4CMHNxAH4BZnEAfgF7c3EAfgFqc3EAfgFtdXEAfgFwAAAAA3NxAH4BcnEAfgF1c3EAfgFycQB+AYFxAH4BeXNxAH4BZnEAfgGDc3EAfgFqc3EAfgFtdXEAfgFwAAAAAnNxAH4BcnEAfgGIcQB+AXlwcHNxAH4BOHEAfgFFdXEAfgFGAAAAAHNxAH4BSAB0ACBteWxvZ2dpbmcubXlsb2dnaW5nLkxvZ0FuYWx5c2lzMXVxAH4BSwAAAABxAH4CGXVxAH4BUQAAAABzcQB+AVMBcQB+AVtwc3EAfgFTAXNxAH4BXXNxAH4BUwF1cQB+ATYAAAABc3IADXhzYnRpLmFwaS5EZWZSvp/ifLQ2aQIAAkwACnJldHVyblR5cGV0ABBMeHNidGkvYXBpL1R5cGU7WwAPdmFsdWVQYXJhbWV0ZXJzdAAaW0x4c2J0aS9hcGkvUGFyYW1ldGVyTGlzdDt4cQB+ATxxAH4BRXVxAH4BRgAAAABzcQB+AUgAcQB+AIF1cQB+AUsAAAAAc3EAfgFmdAAEVW5pdHNxAH4BanNxAH4BbXVxAH4BcAAAAAJzcQB+AXJxAH4BiHEAfgF5dXIAGltMeHNidGkuYXBpLlBhcmFtZXRlckxpc3Q79dM6HfKzcO4CAAB4cAAAAAFzcgAXeHNidGkuYXBpLlBhcmFtZXRlckxpc3TWxbwcZEl04wIAAloACmlzSW1wbGljaXRbAApwYXJhbWV0ZXJzdAAcW0x4c2J0aS9hcGkvTWV0aG9kUGFyYW1ldGVyO3hwAHVyABxbTHhzYnRpLmFwaS5NZXRob2RQYXJhbWV0ZXI7z7jFXaXdtW0CAAB4cAAAAAFzcgAZeHNidGkuYXBpLk1ldGhvZFBhcmFtZXRlch9FrhfTSbDqAgAEWgAKaGFzRGVmYXVsdEwACG1vZGlmaWVydAAdTHhzYnRpL2FwaS9QYXJhbWV0ZXJNb2RpZmllcjtMAARuYW1lcQB+AAxMAAN0cGVxAH4CU3hwAH5yABt4c2J0aS5hcGkuUGFyYW1ldGVyTW9kaWZpZXIAAAAAAAAAABIAAHhxAH4BTnQABVBsYWludAAEYXJnc3NyABd4c2J0aS5hcGkuUGFyYW1ldGVyaXplZBZs7mkDybt/AgACTAAIYmFzZVR5cGVxAH4BZ1sADXR5cGVBcmd1bWVudHN0ABFbTHhzYnRpL2FwaS9UeXBlO3hxAH4BWXNxAH4BZnQABUFycmF5cQB+Alt1cQB+AWQAAAABc3EAfgFmdAAGU3RyaW5nc3EAfgFqc3EAfgFtdXEAfgFwAAAAA3NxAH4BcnEAfgF1c3EAfgFycQB+AYFxAH4BeXBzcQB+AVMBdXEAfgE2AAAAAHBzcQB+AVMBdXEAfgFkAAAAAnNxAH4BZnEAfgF7cQB+AnVzcQB+AWZxAH4Bg3EAfgJbcHB1cgAUW0x4c2J0aS5hcGkuUGFja2FnZTtbExk3cKcnoQIAAHhwAAAAAnNyABF4c2J0aS5hcGkuUGFja2FnZX5Zj/auzjlYAgABTAAEbmFtZXEAfgAMeHB0AAlteWxvZ2dpbmdzcQB+AoJ0ABNteWxvZ2dpbmcubXlsb2dnaW5nc3IAFXhzYnRpLmFwaS5Db21waWxhdGlvbu364MNq6KBCAgACSgAJc3RhcnRUaW1lWwAHb3V0cHV0c3QAGltMeHNidGkvYXBpL091dHB1dFNldHRpbmc7eHAAAAFMQ8vX2nVyABpbTHhzYnRpLmFwaS5PdXRwdXRTZXR0aW5nO39qwvOnh6VCAgAAeHAAAAABc3IAF3hzYnRpLmFwaS5PdXRwdXRTZXR0aW5netmaR3T7HXsCAAJMAA9vdXRwdXREaXJlY3RvcnlxAH4ADEwAD3NvdXJjZURpcmVjdG9yeXEAfgAMeHB0AD8vVXNlcnMvYWxleC93b3Jrc3BhY2Vfc2NhbGEvbXlsb2dnaW5nL3RhcmdldC9zY2FsYS0yLjEwL2NsYXNzZXN0AAEvdXIAAltCrPMX+AYIVOACAAB4cAAAABSiiR5psX+RkbhIvXda6XFofVt/Uw==
+external apis:
+0 items
+source infos:
+1 items
+/Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala -> 
+AAAAAAAAAAA=
+compilations:
+4 items
+0 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABTEOU0IN1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAPy9Vc2Vycy9hbGV4L3dvcmtzcGFjZV9zY2FsYS9teWxvZ2dpbmcvdGFyZ2V0L3NjYWxhLTIuMTAvY2xhc3Nlc3QAAS8=
+1 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABTEO6RwN1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAPy9Vc2Vycy9hbGV4L3dvcmtzcGFjZV9zY2FsYS9teWxvZ2dpbmcvdGFyZ2V0L3NjYWxhLTIuMTAvY2xhc3Nlc3QAAS8=
+2 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABTEO9Dzp1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAPy9Vc2Vycy9hbGV4L3dvcmtzcGFjZV9zY2FsYS9teWxvZ2dpbmcvdGFyZ2V0L3NjYWxhLTIuMTAvY2xhc3Nlc3QAAS8=
+3 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABTEPL19p1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAPy9Vc2Vycy9hbGV4L3dvcmtzcGFjZV9zY2FsYS9teWxvZ2dpbmcvdGFyZ2V0L3NjYWxhLTIuMTAvY2xhc3Nlc3QAAS8=
