@@ -3,15 +3,12 @@ import org.apache.spark.mllib.classification.SVMWithSGD
 import org.apache.spark.mllib.regression.LabeledPoint
 import org.apache.spark.mllib.linalg.Vectors
 import org.apache.spark.mllib.util.MLUtils
-
+import org.apache.spark.mllib.evaluation.BinaryClassificationMetrics
 
 // spark-submit --class LogAnalysis --master yarn-client SparkScalaWordCount/target/scala-2.10/sparkscalawordcount_2.10-1.0.jar --num-executors 25 2>err
 
 // no limit on parallel jobs, but stdout is not displayed locally: need to look into worker log
 // spark-submit --class LogAnalysis --master yarn-cluster SparkScalaWordCount/target/scala-2.10/sparkscalawordcount_2.10-1.0.jar --num-executors 25 2>err
-
-
-
 
 /*
 // spark-shell --master yarn-client --num-executors 25
@@ -102,8 +99,9 @@ import org.apache.spark.SparkConf
 object LogAnalysis1 {
   def main(args: Array[String]) {
     val sc = new SparkContext(new SparkConf().setAppName("LogAnalysis"))
-    val lines = sc.textFile("/Users/alex/workspace_scala/Homework2/yarn-yarn-resourcemanager-master1.log*")
-
+   
+    // sc.textFile(','.join(files))
+    val lines = sc.textFile("/Users/alex/workspace_scala/clusterlogs/yarn-yarn-resourcemanager-master1.log*")
 
     def parseLine(l: String): LogLine =
       LogP.parse(LogP.logline, l).getOrElse(UnknownLine())
@@ -132,6 +130,40 @@ object LogAnalysis1 {
     val ll2 = lines.map(l => parseLine(l)).flatMap(ftemp).cache
     ll2.saveAsTextFile("app_summaries_three")  // in the user's HDFS home directory
     
+    val svmdata = MLUtils.loadLibSVMFile(sc, "app_summaries_three/part-*")
+    val splits = svmdata.randomSplit(Array(0.6, 0.4), seed = 11L)
+    val training = splits(0).cache()
+    val test = splits(1)
+    
+    val numIterations = 100
+    val model = SVMWithSGD.train(training, numIterations)
+
+    // Clear the default threshold.
+    model.clearThreshold()
+
+    // Compute raw scores on the test set. 
+    val scoreAndLabels = test.map { point =>
+         val score = model.predict(point.features)
+                     (score, point.label)
+    }
+    val labelAndPreds = training.map { point =>
+    val prediction = model.predict(point.features)
+       (point.label, prediction)
+    }
+    val trainErr = labelAndPreds.filter(r => r._1 != r._2).count.toDouble / training.count
+    println("Training Error = " + trainErr)
+    
+    val labelAndPredsTest = test.map { point =>
+    val prediction = model.predict(point.features)
+       (point.label, prediction)
+    }
+    val testErr = labelAndPredsTest.filter(r => r._1 != r._2).count.toDouble / training.count
+    println("Testing Error = " + testErr)
+
+    scoreAndLabels.map{case(v,p) => println("score and labels = "  +v + ' ' + p)}.collect()
+    val metrics = new BinaryClassificationMetrics(labelAndPredsTest)
+    val auROC = metrics.areaUnderROC()
+    println("auROC value is " + auROC)
     sc.stop()
   }
 }
