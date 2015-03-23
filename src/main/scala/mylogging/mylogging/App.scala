@@ -111,7 +111,7 @@ object LogAnalysis1 {
     val sc = new SparkContext(new SparkConf().setAppName("LogAnalysis"))
    
     // sc.textFile(','.join(files))
-    val lines = sc.textFile("/Users/alex/workspace_scala/clusterlogs/yarn-yarn-*")
+    val lines = sc.textFile("/Users/alex/workspace_scala/clusterlogs/*")
 
     def parseLine(l: String): LogLine =
       LogP.parse(LogP.logline, l).getOrElse(UnknownLine())
@@ -129,14 +129,25 @@ object LogAnalysis1 {
       case AppContainer(container, app) => List(container +" "+app)
       case _ => List()
     }
+    def unique_containers(a: LogLine) = a match {
+      case AppContainer(container, app) => List(List(app, container))
+      case _ => List()
+    }
 
     val ll = lines.map(l => parseLine(l)).flatMap(fother).cache
     ll.saveAsTextFile("app_summaries_one")  // in the user's HDFS home directory
-
     val ll2 = lines.map(l => parseLine(l)).flatMap(ftemp).cache
     ll2.saveAsTextFile("app_summaries_three")  // in the user's HDFS home directory
     
-    val svmdata = MLUtils.loadLibSVMFile(sc, "app_summaries_three/part-*")
+    def fsvm(a: LogLine) = a match {
+      case AppSummary(t, app, name, user, state, url, host, stime, etime, finalStatus) => if (finalStatus == "SUCCEEDED") List("1 " + (etime.toDouble-stime.toDouble).toString) else List("0 " + (etime.toDouble-stime.toDouble).toString)
+      case _ => List()
+    }
+    val linessvm = lines.map(l => parseLine(l)).flatMap(fsvm).cache
+    val svmdata = linessvm.map { line =>
+      val parts = line.split(" ").map(_.toDouble)
+        LabeledPoint(parts(0), Vectors.dense(parts.tail))
+    }
     
     val CVfold:Int = 2
     var auROC:Array[Double] = new Array[Double](CVfold)
