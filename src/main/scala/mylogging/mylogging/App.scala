@@ -128,13 +128,19 @@ object LogAnalysis1 {
     
     val svmdata = MLUtils.loadLibSVMFile(sc, "app_summaries_three/part-*")
     
-    val CVfold:Int = 2
+    val CVfold:Int = 5
     var auROC:Array[Double] = new Array[Double](CVfold)
     for (cv_iter <- 0 to CVfold - 1) {
-    	val splits = svmdata.randomSplit(Array(0.6, 0.4), seed = 11L)
+    	val splits = svmdata.randomSplit(Array(0.6, 0.4), seed = 11L + cv_iter)
     	val training = splits(0).cache()
     	val test = splits(1)
 
+      val tr_1 = training.filter(r => r.label == 1.0).count.toDouble / training.count
+      val tr_0 = training.filter(r => r.label == 0.0).count.toDouble / training.count
+      val te_1 = test.filter(r => r.label == 1).count.toDouble / test.count
+      val te_0 = test.filter(r => r.label == 0).count.toDouble / test.count
+      println("The 4 values are ", tr_0, tr_1, te_0, te_1)
+      
     	val numIterations = 100
     	val model = SVMWithSGD.train(training, numIterations)
 
