@@ -107,10 +107,6 @@ object LogAnalysis1 {
       LogP.parse(LogP.logline, l).getOrElse(UnknownLine())
        
 
-/*
-    parseLine(l2)
-*/
-
     def f(a: LogLine) = a match {
       case AppSummary(t, app, name, user, state, url, host, stime, etime, finalStatus) => List(user+" "+state+" "+host+" "+stime+" "+etime+" "+finalStatus)
       case _ => List()
@@ -131,39 +127,49 @@ object LogAnalysis1 {
     ll2.saveAsTextFile("app_summaries_three")  // in the user's HDFS home directory
     
     val svmdata = MLUtils.loadLibSVMFile(sc, "app_summaries_three/part-*")
-    val splits = svmdata.randomSplit(Array(0.6, 0.4), seed = 11L)
-    val training = splits(0).cache()
-    val test = splits(1)
     
-    val numIterations = 100
-    val model = SVMWithSGD.train(training, numIterations)
+    val CVfold:Int = 2
+    var auROC:Array[Double] = new Array[Double](CVfold)
+    for (cv_iter <- 0 to CVfold - 1) {
+    	val splits = svmdata.randomSplit(Array(0.6, 0.4), seed = 11L)
+    	val training = splits(0).cache()
+    	val test = splits(1)
 
-    // Clear the default threshold.
-    model.clearThreshold()
+    	val numIterations = 100
+    	val model = SVMWithSGD.train(training, numIterations)
 
-    // Compute raw scores on the test set. 
-    val scoreAndLabels = test.map { point =>
-         val score = model.predict(point.features)
-                     (score, point.label)
-    }
-    val labelAndPreds = training.map { point =>
-    val prediction = model.predict(point.features)
-       (point.label, prediction)
-    }
-    val trainErr = labelAndPreds.filter(r => r._1 != r._2).count.toDouble / training.count
-    println("Training Error = " + trainErr)
-    
-    val labelAndPredsTest = test.map { point =>
-    val prediction = model.predict(point.features)
-       (point.label, prediction)
-    }
-    val testErr = labelAndPredsTest.filter(r => r._1 != r._2).count.toDouble / training.count
-    println("Testing Error = " + testErr)
+    	// Clear the default threshold.
+    	model.clearThreshold()
 
-    scoreAndLabels.map{case(v,p) => println("score and labels = "  +v + ' ' + p)}.collect()
-    val metrics = new BinaryClassificationMetrics(labelAndPredsTest)
-    val auROC = metrics.areaUnderROC()
-    println("auROC value is " + auROC)
+    			// Compute raw scores on the test set. 
+    	val scoreAndLabels = test.map { point =>
+    			val score = model.predict(point.features)
+    			(score, point.label)
+    	}
+    	val labelAndPreds = training.map { point =>
+    	val prediction = model.predict(point.features)
+    	      (point.label, prediction) 
+       }
+    	val trainErr = labelAndPreds.filter(r => r._1 != r._2).count.toDouble / training.count
+    	println("Training Error = " + trainErr)
+
+    	val labelAndPredsTest = test.map { point =>
+    	val prediction = model.predict(point.features)
+    			(point.label, prediction)
+    	}
+    	val testErr = labelAndPredsTest.filter(r => r._1 != r._2).count.toDouble / training.count
+    	println("Testing Error = " + testErr)
+
+    	scoreAndLabels.map{case(v,p) => println("score and labels = "  +v + ' ' + p)}.collect()
+    	val metrics = new BinaryClassificationMetrics(labelAndPredsTest)
+    	val temp = metrics.areaUnderROC()
+      println("prinintg " + temp + " " + cv_iter)
+      auROC(cv_iter) = temp
+    	println("auROC value is " + auROC(cv_iter) + " " + cv_iter)
+    }
+    val sum = auROC.reduceLeft(_ + _)
+    val mean = sum.toDouble / auROC.size
+    println("Mean auROC value is " + mean)
     sc.stop()
   }
 }
