@@ -86,7 +86,7 @@ object LogAnalysis1 {
        
 
     def f(a: LogLine) = a match {
-      case AppSummary(t, app, name, user, state, url, host, stime, etime, finalStatus) => List((app,finalStatus))
+      case AppSummary(t, app, name, user, state, url, host, stime, etime, finalStatus) =>  if (finalStatus == "SUCEEDDED") List((app, 1)) else List((app, 0))
       case _ => List()
     }
 
@@ -106,7 +106,9 @@ object LogAnalysis1 {
     lines_max_container.saveAsTextFile("app_summaries_one")
     val joinoutput = llresource.join(lines_max_container)
     joinoutput.saveAsTextFile("joinoutput")
- 
+    val svmjoindata = joinoutput.map {kvPair => LabeledPoint(kvPair._2._1, Vectors.dense(kvPair._2._2.toInt))
+    }
+    
     // Add the running time of the application to the SVM
     def fsvm(a: LogLine) = a match {
       case AppSummary(t, app, name, user, state, url, host, stime, etime, finalStatus) => if (finalStatus == "SUCCEEDED") List("1 " + (etime.toDouble-stime.toDouble).toString) else List("0 " + (etime.toDouble-stime.toDouble).toString)
@@ -117,11 +119,11 @@ object LogAnalysis1 {
       val parts = line.split(" ").map(_.toDouble)
         LabeledPoint(parts(0), Vectors.dense(parts.tail))
     }
-    /*
+    
     val CVfold:Int = 2
     var auROC:Array[Double] = new Array[Double](CVfold)
     for (cv_iter <- 0 to CVfold - 1) {
-    	val splits = svmdata.randomSplit(Array(0.6, 0.4), seed = 11L + cv_iter)
+    	val splits = svmjoindata.randomSplit(Array(0.6, 0.4), seed = 11L + cv_iter)
     	val training = splits(0).cache()
     	val test = splits(1)
 
@@ -165,7 +167,7 @@ object LogAnalysis1 {
     }
     val sum = auROC.reduceLeft(_ + _)
     val mean = sum.toDouble / auROC.size
-    println("Mean auROC value is " + mean)*/
+    println("Mean auROC value is " + mean)
     sc.stop()
   }
 }
