@@ -12,7 +12,7 @@ import org.apache.spark.mllib.evaluation.BinaryClassificationMetrics
 
 /*
 // spark-shell --master yarn-client --num-executors 25
-
+put -r /Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/App.scala
 
 import scala.util.parsing.combinator._
 
@@ -118,26 +118,28 @@ object LogAnalysis1 {
        
 
     def f(a: LogLine) = a match {
-      case AppSummary(t, app, name, user, state, url, host, stime, etime, finalStatus) => List(user+" "+app+" "+host+" "+stime+" "+etime+" "+finalStatus)
-      case _ => List()
+      case AppSummary(t, app, name, user, state, url, host, stime, etime, finalStatus) => Map((app,finalStatus))
+      case _ => Map()
     }
     def ftemp(a: LogLine) = a match {
       case AppSummary(t, app, name, user, state, url, host, stime, etime, finalStatus) => if (finalStatus == "SUCCEEDED") List("1 1:" + (etime.toDouble-stime.toDouble).toString) else List("0 1:" + (etime.toDouble-stime.toDouble).toString)
       case _ => List()
     }
-    def fother(a: LogLine) = a match {
-      case AppContainer(container, app) => List(container +" "+app)
-      case _ => List()
-    }
-    def unique_containers(a: LogLine) = a match {
+    def fnodemagenerLines(a: LogLine) = a match {
       case AppContainer(container, app) => List(List(app, container))
       case _ => List()
     }
 
-    val ll = lines.map(l => parseLine(l)).flatMap(fother).cache
-    ll.saveAsTextFile("app_summaries_one")  // in the user's HDFS home directory
-    val ll2 = lines.map(l => parseLine(l)).flatMap(ftemp).cache
-    ll2.saveAsTextFile("app_summaries_three")  // in the user's HDFS home directory
+    val ll = lines.map(l => parseLine(l)).flatMap(fnodemagenerLines).cache
+    var lines_unique_containers = ll.groupBy(l=> l(0)).mapValues(listofpairs => listofpairs.toSet).mapValues(x => x.size)    
+    var lines_max_container = ll.map(x => (x(0),x(1)) ).groupBy(l=>l).map(l=> (l._1._1, l._2.size)).groupBy(l=> l._1).mapValues(mlist=> mlist.map(x=>x._2)).mapValues(x=>x.max)
+    
+    val llresource = lines.map(l=>f(parseLine(l))).cache
+   // var out = (llresource.keySet ++ lines_max_container.keySet).map (i=> (i, (map1.getOrElse(i,0), map2.getOrElse(i,0)))}.toMap
+  //  llresource.join(lines_max_container)({ case ((k,v1),(_,v2)) => (k,(v1,v2)) })
+    llresource.saveAsTextFile("app_resource_sum")
+    lines_max_container.saveAsTextFile("app_summaries_one")
+    
     
     def fsvm(a: LogLine) = a match {
       case AppSummary(t, app, name, user, state, url, host, stime, etime, finalStatus) => if (finalStatus == "SUCCEEDED") List("1 " + (etime.toDouble-stime.toDouble).toString) else List("0 " + (etime.toDouble-stime.toDouble).toString)
@@ -200,7 +202,6 @@ object LogAnalysis1 {
     sc.stop()
   }
 }
-
 
 
 
