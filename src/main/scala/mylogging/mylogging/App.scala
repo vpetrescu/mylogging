@@ -4,6 +4,7 @@ import org.apache.spark.mllib.regression.LabeledPoint
 import org.apache.spark.mllib.linalg.Vectors
 import org.apache.spark.mllib.util.MLUtils
 import org.apache.spark.mllib.evaluation.BinaryClassificationMetrics
+import scala.util.parsing.combinator._
 
 // spark-submit --class LogAnalysis --master yarn-client SparkScalaWordCount/target/scala-2.10/sparkscalawordcount_2.10-1.0.jar --num-executors 25 2>err
 
@@ -16,32 +17,6 @@ put -r /Users/alex/workspace_scala/mylogging/src/main/scala/mylogging/mylogging/
 
 import scala.util.parsing.combinator._
 
-
-object Adder extends RegexParsers {
-  def expr: Parser[Int] = (
-   "("~expr~"+"~expr~")" ^^ { case "("~x~"+"~y~")" => x+y }
-  | number
-  )
-
-  val number: Parser[Int] = """[0-9]+""".r ^^ { _.toInt}
-}
-
-Adder.parse(Adder.expr, "(7+4)")
-
-
-object LogP extends RegexParsers {
-  def logline: Parser[Any] = (
-    timestamp~"""INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler: Application Attempt"""~ident~"is done. finalState="~ident ^^ {
-       case t~_~a~_~s => Option(t, a, s)
-    }
-  |  "[^\n]+".r ^^ (_ => None)
-  )
-
-  val ident: Parser[String] = "[A-Za-z0-9_]+".r
-  val timestamp: Parser[String] = "2015-[0-9][0-9]-[0-9][0-9] [0-9:,]+".r
-}
-
-
 val l1 = """2015-03-10 05:15:53,196 INFO org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler: Application Attempt appattempt_1425682538854_1748_000001 is done. finalState=FINISHED"""
 
 val l2 = """2015-03-10 05:15:53,196 INFO org.apache.hadoop.yarn.server.resourcemanager.RMAppManager$ApplicationSummary: appId=application_1425682538854_1748,name=decompress,user=joe,queue=default,state=FINISHED,trackingUrl=http://master1:8088/proxy/application_1425682538854_1748/jobhistory/job/job_1425682538854_1748,appMasterHost=icdatasrv019.icdatacluster2,startTime=1425960925158,finishTime=1425960946325,finalStatus=FAILED"""
@@ -49,10 +24,6 @@ val l2 = """2015-03-10 05:15:53,196 INFO org.apache.hadoop.yarn.server.resourcem
 val l3 = """2015-03-03 17:59:51,137 INFO org.apache.hadoop.yarn.server.resourcemanager.RMAppManager$ApplicationSummary: appId=application_1424932957480_0341,name=Spark shell,user=bob,queue=default,state=FINISHED,trackingUrl=http://master1:8088/proxy/application_1424932957480_0341/A,appMasterHost=icdatasrv058.icdatacluster2,startTime=1425392421737,finishTime=1425401990053,finalStatus=SUCCEEDED"""
 val l4 = """2015-03-10 13:44:55,243 INFO org.apache.hadoop.yarn.server.nodemanager.containermanager.monitor.ContainersMonitorImpl: Memory usage of ProcessTree 227772 for container-id container_1425682538854_2409_01_000289: 2.4 GB of 8.7 GB physical memory used; 8.0 GB of 18.2 GB virtual memory used"""
 */
-
-
-
-import scala.util.parsing.combinator._
 
 
 abstract class LogLine extends java.io.Serializable
@@ -100,8 +71,6 @@ object LogP extends RegexParsers with java.io.Serializable {
   val url: Parser[String] = "http://[a-zA-Z0-1.]+:[0-9]+/[a-zA-Z0-9_/]+".r
 }
 
-//container_1425682538854_2409_01_000289
-
 import org.apache.spark.SparkContext
 import org.apache.spark.SparkContext._
 import org.apache.spark.SparkConf
@@ -110,7 +79,6 @@ object LogAnalysis1 {
   def main(args: Array[String]) {
     val sc = new SparkContext(new SparkConf().setAppName("LogAnalysis"))
    
-    // sc.textFile(','.join(files))
     val lines = sc.textFile("/Users/alex/workspace_scala/clusterlogs/*")
 
     def parseLine(l: String): LogLine =
@@ -118,13 +86,10 @@ object LogAnalysis1 {
        
 
     def f(a: LogLine) = a match {
-      case AppSummary(t, app, name, user, state, url, host, stime, etime, finalStatus) => Map((app,finalStatus))
-      case _ => Map()
-    }
-    def ftemp(a: LogLine) = a match {
-      case AppSummary(t, app, name, user, state, url, host, stime, etime, finalStatus) => if (finalStatus == "SUCCEEDED") List("1 1:" + (etime.toDouble-stime.toDouble).toString) else List("0 1:" + (etime.toDouble-stime.toDouble).toString)
+      case AppSummary(t, app, name, user, state, url, host, stime, etime, finalStatus) => List((app,finalStatus))
       case _ => List()
     }
+
     def fnodemagenerLines(a: LogLine) = a match {
       case AppContainer(container, app) => List(List(app, container))
       case _ => List()
@@ -134,13 +99,15 @@ object LogAnalysis1 {
     var lines_unique_containers = ll.groupBy(l=> l(0)).mapValues(listofpairs => listofpairs.toSet).mapValues(x => x.size)    
     var lines_max_container = ll.map(x => (x(0),x(1)) ).groupBy(l=>l).map(l=> (l._1._1, l._2.size)).groupBy(l=> l._1).mapValues(mlist=> mlist.map(x=>x._2)).mapValues(x=>x.max)
     
-    val llresource = lines.map(l=>f(parseLine(l))).cache
-   // var out = (llresource.keySet ++ lines_max_container.keySet).map (i=> (i, (map1.getOrElse(i,0), map2.getOrElse(i,0)))}.toMap
-  //  llresource.join(lines_max_container)({ case ((k,v1),(_,v2)) => (k,(v1,v2)) })
+    var llresource = lines.map(l=>parseLine(l)).flatMap(f)
+    
+
     llresource.saveAsTextFile("app_resource_sum")
     lines_max_container.saveAsTextFile("app_summaries_one")
-    
-    
+    val joinoutput = llresource.join(lines_max_container)
+    joinoutput.saveAsTextFile("joinoutput")
+ 
+    // Add the running time of the application to the SVM
     def fsvm(a: LogLine) = a match {
       case AppSummary(t, app, name, user, state, url, host, stime, etime, finalStatus) => if (finalStatus == "SUCCEEDED") List("1 " + (etime.toDouble-stime.toDouble).toString) else List("0 " + (etime.toDouble-stime.toDouble).toString)
       case _ => List()
@@ -150,7 +117,7 @@ object LogAnalysis1 {
       val parts = line.split(" ").map(_.toDouble)
         LabeledPoint(parts(0), Vectors.dense(parts.tail))
     }
-    
+    /*
     val CVfold:Int = 2
     var auROC:Array[Double] = new Array[Double](CVfold)
     for (cv_iter <- 0 to CVfold - 1) {
@@ -162,7 +129,7 @@ object LogAnalysis1 {
       val tr_0 = training.filter(r => r.label == 0.0).count.toDouble / training.count
       val te_1 = test.filter(r => r.label == 1).count.toDouble / test.count
       val te_0 = test.filter(r => r.label == 0).count.toDouble / test.count
-      println("The 4 values are ", tr_0, tr_1, te_0, te_1)
+      println("tr_0, tr_1, te_0, te_1 values are ", tr_0, tr_1, te_0, te_1)
       
     	val numIterations = 100
     	val model = SVMWithSGD.train(training, numIterations)
@@ -198,7 +165,7 @@ object LogAnalysis1 {
     }
     val sum = auROC.reduceLeft(_ + _)
     val mean = sum.toDouble / auROC.size
-    println("Mean auROC value is " + mean)
+    println("Mean auROC value is " + mean)*/
     sc.stop()
   }
 }
